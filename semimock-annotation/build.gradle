@@ -1,0 +1,15 @@
+plugins {
+    id 'java'
+    id 'kotlin'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+}
+
+test {
+    useJUnitPlatform()
+}

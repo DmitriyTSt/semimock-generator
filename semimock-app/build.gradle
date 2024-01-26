@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+    id 'kotlin'
+    id 'kotlin-kapt'
+}
+
+group = 'ru.dmitriyt'
+version = '1.0'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':semimock-annotation')
+    kapt project(':semimock-processor')
+}
+
+test {
+    useJUnitPlatform()
+}
